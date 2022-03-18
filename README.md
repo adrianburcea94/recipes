@@ -11,6 +11,11 @@
 ./start.sh
 ```
 
+#### Stop the containers
+```
+./stop.sh
+```
+
 # Architecture
 ### <b>RESTful service</b> - using SpringBoot. There are multiple benefits that come with using Spring Boot for developing RESTful services:
 * Helps to autoconfigure all components for a production-grade Spring app
@@ -19,6 +24,12 @@
 * Comes with embedded HTTP servers like Jetty and Tomcat to test web applications
 * The integration of Spring Boot with the Spring ecosystem which includes Spring Data and Spring Security is easy.
 
+Our Spring Boot application follows a layered architecture in which each layer communicates with the layer directly below or above (hierarchical structure) it.
+There are four layers in Spring Boot are as follows:
+* Presentation Layer
+* Business Layer
+* Persistence Layer
+* Database Layer
 
 ### MongoDB
 * MongoDB is a document database used to build highly available and scalable internet applications.
